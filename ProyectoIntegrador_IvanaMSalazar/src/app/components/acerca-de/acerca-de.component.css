@@ -1,0 +1,45 @@
+.row{
+    padding: 20px;
+}
+div{
+    background-color:darkgray;
+    text-align: center;
+}
+#nombre{
+    font-weight: bold;
+    margin-top: 15%;
+    text-align: center;
+}
+
+#tituloBio{
+    text-align: left;
+    font-weight: bold;
+    color: rgb(14, 13, 13);
+    text-decoration-thickness: auto;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#bio{
+    text-align: left;
+}
+
+@media (min-width: 576px) {
+    #fotoperfil{
+        border-radius: 50%;
+        position: absolute;
+        width: 15%;
+        top: 350px;
+        left: 2%;
+        box-decoration-break: normal;
+    }
+}
+
+@media (max-width: 575px) {
+    #fotoperfil{
+        border-radius: 50%;
+        position: center;
+        width: 30%;
+        top: 400px;
+        left: 2%;
+    }
+}
