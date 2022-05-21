@@ -27,10 +27,9 @@ div{
     #fotoperfil{
         border-radius: 50%;
         position: absolute;
-        width: 15%;
+        width: 12%;
         top: 350px;
         left: 2%;
-        box-decoration-break: normal;
     }
 }
 
@@ -39,7 +38,7 @@ div{
         border-radius: 50%;
         position: center;
         width: 30%;
-        top: 400px;
+        top: 250px;
         left: 2%;
     }
 }

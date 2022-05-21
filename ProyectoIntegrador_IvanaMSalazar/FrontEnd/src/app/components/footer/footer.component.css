@@ -1,0 +1,11 @@
+.row{
+    background-color: darkgray;
+    padding: 15px;
+}
+
+footer{
+    font-size: 15px;
+    color: #79454d;/*rgb(236, 59, 154);*/
+    text-align: center;
+    box-shadow: 3px -3px 5px #FFC300;
+}
