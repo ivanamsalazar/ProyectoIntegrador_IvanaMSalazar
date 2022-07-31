@@ -8,10 +8,11 @@
                 <a href=""><img src="../../../assets/socialIG.png" alt="instagram"></a>
                 <a href=""><img src="../../../assets/socialtw.png" alt="twitter"></a>
                 <a href=""><img src="../../../assets/socialFB.png" alt="facebook"></a>
-                <button type="button" class="btn btn-outline-light">LOGIN</button>
+                <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">INGRESAR</button>
+                <button type="button" class="btn btn-outline-light" (click)="onLogOut()"*ngIf="isLogged">SALIR</button>
         </div>
 
-    </div>
+    </div>isL
 
 </div>
 

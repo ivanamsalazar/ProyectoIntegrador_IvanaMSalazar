@@ -1,29 +1,29 @@
 <div class="row">
     <h1>Experiencia Laboral</h1>
-    <div class="col-lg-11">
-        <ul>
-            <li>
-                <h2>Tester</h2> -<h4>(years)</h4>
-            </li>
-            <p>Tester Funcional - Grupo Aoniken<p>
-        </ul>
-        <ul>
-            <li>
-                <h2>Administrativa</h2> -<h4>(years)</h4>
-            </li>
-            <p>Administrativa - Anjor SA<p>
-        </ul>
-        <ul>
-            <li>
-                <h2>Consultora ERP</h2> -<h4>(years)</h4>
-            </li>
-            <p>Analista Funcional - OpenOrange<p>
-        </ul>
-        <ul>
-            <li>
-                <h2>Responsable de administración</h2> -<h4>(years)</h4>
-            </li>
-            <p>Administración general - Repuesto y Autopartes<p>
-        </ul>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
+            Nueva Experiencia
+        </button>
     </div>
+
+    <div class="col lg 1"></div>
+    <div class="col-lg-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Experiencia of expe">
+                    <td>
+                        {{Experiencia.nombreE}}
+                    </td>
+                    <td><h1>{{Experiencia.descripcionE}}</h1></td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-dark" routerLink="/editexp/{{Experiencia.id}}">
+                            <i class="bi bi-pencil"></i>EDITAR</button></td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-danger" (click)="delete(Experiencia.id)">
+                            <i  class="bi bi-x"></i>BORRAR</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
 </div>
